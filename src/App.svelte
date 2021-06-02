@@ -57,7 +57,7 @@
 	h1 {
 		color: #ff3e00;
 		
-		font-size: 3em;
+		font-size: 2em;
 		font-weight: 100;
 	}
 
