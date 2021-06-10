@@ -3,11 +3,11 @@
 	
 	let todos = [
 		{ done: false,
-		    fecha: '',
-		    textClient: '' ,
-			numberCantidad: '',
-			textDetalle: '',
-			numberImporte: ''  }
+		  fecha: '',
+		  textClient: '' ,
+		  numberCantidad: '',
+		  textDetalle: '',
+		  numberImporte: ''  }
 		
 	];
     
@@ -15,10 +15,10 @@
 	function add() {
 		todos = todos.concat({ done: false,
 		                       fecha: '',
-							   textClient: '',
-							   numberCantidad: '',
-							   textDetalle: '',
-							   numberImporte: '' });
+				       textClient: '',
+				       numberCantidad: '',
+				       textDetalle: '',
+			               numberImporte: '' });
 	}
 
 	function clear() {
@@ -54,9 +54,9 @@
        <div class="flex justify-center">
            <input 
 		    type=date
-			placeholder="Nuevo Pago Fecha"
-			bind:value={todo.fecha}
-			disabled={todo.done}
+		    placeholder="Nuevo Pago Fecha"
+		    bind:value={todo.fecha}
+		    disabled={todo.done}
             class="px-8 w-full border rounded py-2 text-gray-700 focus:outline-none" />
        </div>
     </div>
@@ -65,9 +65,9 @@
        <div class="flex justify-center">
            <input 
 		    type=text
-			placeholder="Cliente Nombre"
-			bind:value={todo.textClient}
-			disabled={todo.done}
+		    placeholder="Cliente Nombre"
+	            bind:value={todo.textClient}
+		    disabled={todo.done}
             class="px-8 w-full border rounded py-2 text-gray-700 focus:outline-none" />
        </div>
     </div>
@@ -121,8 +121,8 @@
 		    <li class="">
 		                {i+1}) 
 		                {todoSort.fecha}
-						{todoSort.textClient} 
-						{todoSort.numberImporte}
+				{todoSort.textClient} 
+				{todoSort.numberImporte}
 
 		    </li>			
 		</ul>
